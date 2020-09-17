@@ -4,6 +4,7 @@ String.prototype.format = function() {
         var regexp = new RegExp('\\{'+i+'\\}', 'gi');
         formatted = formatted.replace(regexp, arguments[i]);
     }
+    console.log(formatted);
     return formatted;
 };
 
